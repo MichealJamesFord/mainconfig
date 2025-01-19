@@ -26,11 +26,14 @@ imperium_specializations = {
             Prefix = ""
         }
     },
-    ["US AA"] = {
-        DivisionTypes = {"U.S Infantry","Francoist Spain Infantry Division"},
+    ["CVRT"] = {
+        DivisionTypes = {"Commonwealth Division"},
         Supply = 10000,
+        Description = "This Class Unlocks and Can Spawn CVRT british vehicals CVRT Vehcials where a key part of British Nato Forces In Europe acting as a screening force for Heavy armour units , Interdiction of Enemy Recon and used The Fast light vehcials to get around. Gives access to Scorpion , Scimitar and Fox.",
+        Prerequisites = {"Logistics"-}, #placehold
+        WeeklyActivity = 30,
         Class = {
-            Name = "Anti Air",
+            Name = "CVRT",
             Default = false,
             Models = {},
             Weapons = {},
@@ -38,6 +41,20 @@ imperium_specializations = {
             Prefix = ""
         }
     },
+    ["CW Logistics"] = {
+        DivisionTypes = {"Commonwealth Division"},
+        Supply = 10000,
+        Description = "This Class Unlocks Commonwealth Logistic Vehicals and The Land Rover, all vehicals unlocked are unarmed.",
+        WeeklyActivity = 0,
+        Class = {
+            Name = "LOGI",
+            Default = false,
+            Models = {},
+            Weapons = {},
+            SpawnWeapons = {},
+            Prefix = ""
+        }
+    },    
     ["US Tanker"] = {
         DivisionTypes = {"U.S Infantry","Francoist Spain Infantry Division"},
         Supply = 25000,
